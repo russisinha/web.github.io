@@ -13,12 +13,12 @@
          <p><a href = "#viewStudents">View Students</a></p>
          <div ng-view></div>
          
-         <script type = "text/ng-template" id = "addStudent.htm">
+         <script type = "text/ng-template" id = "login1.htm">
             <h2> Add Student </h2>
             {{message}}
          </script>
          
-         <script type = "text/ng-template" id = "viewStudents.htm">
+         <script type = "text/ng-template" id = "login2.htm">
             <h2> View Students </h2>
             {{message}}
          </script>
@@ -30,12 +30,12 @@
             $routeProvider.
             
             when('/addStudent', {
-               templateUrl: 'login.htm',
+               templateUrl: 'pages/login.htm',
                controller: 'AddStudentController'
             }).
             
             when('/viewStudents', {
-               templateUrl: 'login.htm',
+               templateUrl: 'login2.htm',
                controller: 'ViewStudentsController'
             }).
             
