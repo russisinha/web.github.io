@@ -1,0 +1,88 @@
+<div class="row justify-content-center">
+
+	<div class="col signupSection">
+	   	<div class="row">
+	      	<div class="fieldName">
+	         	<i class="fas fa-user"></i>&nbsp;&nbsp;USERNAME
+	      	</div>
+	      	<div class="col">
+	         	<input type="text" class="form-control" ng-model="username">
+	      	</div>
+	   	</div>
+	   	<div class="row fieldSeperator">
+	      	<div class="fieldName">
+	         	<i class="fas fa-key"></i>&nbsp;&nbsp;PASSWORD
+	      	</div>
+	      	<div class="col">
+	         	<input type="password" class="form-control" ng-model="password1">
+	      	</div>
+	   	</div>
+	   	<div class="row fieldSeperator">
+	      	<div class="fieldName">
+	         	<i class="fas fa-key"></i>&nbsp;&nbsp;CONFIRM PASSWORD
+	      	</div>
+	      	<div class="col">
+	         	<input type="password" class="form-control" ng-model="password2">
+	      	</div>
+	   	</div>
+
+	   	<div class="row fieldSeperator">
+	      	<div class="fieldName">
+	         	<i class="fas fa-question"></i>&nbsp;&nbsp;SECRET QUESTION
+	      	</div>
+	      	<div class="col">
+	         	<input type="text" class="form-control">
+	      	</div>
+	   	</div>
+
+	   	<div class="row fieldSeperator">
+	      	<div class="fieldName">
+	         	<i class="fas fa-user-secret"></i>&nbsp;&nbsp;SECRET ANSWER
+	      	</div>
+	      	<div class="col">
+	         	<input type="text" class="form-control">
+	      	</div>
+	   	</div>
+
+   	   	<div class="row fieldSeperator">
+	      	<div class="fieldName">
+	         	<i class="fas fa-envelope"></i>&nbsp;&nbsp;EMAIL
+	      	</div>
+	      	<div class="col">
+	         	<input type="text" class="form-control">
+	      	</div>
+	   	</div>
+
+   	   	<div class="row fieldSeperator">
+	      	<div class="fieldName">
+	         	<i class="fas fa-handshake"></i>&nbsp;&nbsp;RELATIONSHIP WITH US
+	      	</div>
+	      	<div class="col">
+	         	<select class="form-control">
+		         	<option></option>
+	         		<option value="test1">test1</option>
+	         		<option value="test2">test2</option>
+	         	</select>
+	      	</div>
+	   	</div>
+
+   	   	<div class="row fieldSeperator">
+	      	<div class="fieldName">
+	         	<i class="fas fa-phone"></i>&nbsp;&nbsp;CONTACT NUMBER
+	      	</div>
+	      	<div class="col">
+	         	<input type="text" class="form-control">
+	      	</div>
+	   	</div>
+
+
+	   	<div class="row" style="margin-top: 50px">
+      		<div class="col text-center">
+      			<div ng-show="msgDisp" ng-bind="successMsg" style="color:green; font-size: 1.3em;"></div>
+         		<button class="btn btn-primary" ng-click="clickSignup()" ng-hide="msgDisp">&nbsp;&nbsp;SIGNUP&nbsp;&nbsp;</button>
+	      	</div>
+	   	</div>
+	</div>
+
+</div>
+

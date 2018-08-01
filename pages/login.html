@@ -1,0 +1,36 @@
+<div class="row justify-content-center">
+
+	<div class="col loginSection">
+	   <div class="row">
+	      <div class="fieldName">
+	         <i class="fas fa-user"></i>&nbsp;&nbsp;USERNAME
+	      </div>
+	      <div class="col">
+	         <input type="text" class="form-control" ng-model="username">
+	      </div>
+	   </div>
+	   <div class="row fieldSeperator">
+	      <div class="fieldName">
+	         <i class="fas fa-key"></i>&nbsp;&nbsp;PASSWORD
+	      </div>
+	      <div class="col">
+	         <input type="password" class="form-control" ng-model="password">
+	      </div>
+	   </div>
+	   <div class="row" style="margin-top: 50px">
+			<div class="col-12 text-center">
+      			<div ng-show="msgDisp" ng-bind="loginMsg" style="color:red; font-size: 1.3em; position: absolute; width: 100%; margin-top: -40px;"></div>
+	      	</div>
+
+	      <div hidden class="col text-left">
+	         <input type="checkbox" class="">&nbsp;Login as administrator
+	      </div>
+	      <div class="col text-right">
+	         <button class="btn btn-primary" ng-click="clickLogin()">&nbsp;&nbsp;LOGIN&nbsp;&nbsp;</button>
+	      </div>
+
+	   </div>
+	</div>
+
+</div>
+
